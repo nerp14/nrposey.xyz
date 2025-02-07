@@ -1,9 +1,38 @@
-<html>
+<html lang="en">
     <head>
-
+        <link rel="stylesheet" href="style.css">
+        <title>Noah's Webpage</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <style>
+            .spinning-logo{
+                animation: rotate 5s infinite linear;
+            }
+            
+            @keyframes rotate{
+                from{transform: rotate(0deg);}
+                to{transform: rotate(360deg);}
+            }
+        </style>
     </head>
 
     <main>
-        
+
+        <header>
+            <div class="nav-container">
+                <a href="/index.html">Home <span class="console-cursor">&lt;</span></a>
+                <a href="/portfolio.html">Portfolio</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+        </header>
+
+        <body>
+            <img src='/images/noahlogogreen.svg' height='512px' width='512px' class='spinning-logo'>
+            <br>
+            Hello! Welcome to my website! Check out the links at the top!<br><br>
+            Phone: 919-455-7749<br>
+            Email: <a href="mailto:nrposey14@gmail.com">nrposey14@gmail.com</a><br>
+        </body>
+
     </main>
 </html>

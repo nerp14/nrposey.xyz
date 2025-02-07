@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+html{
+    background-color: #0c1100;
+    color: #b3ff00;
+    font-family: "Source Code Pro", serif;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: #b3ff00;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: left;
+}
+
+.nav-container a{
+    text-decoration: none;
+    margin: 4px;
+    padding: 16px;
+}
+
+.nav-container a:hover{
+    background-color: #405c00;
+}
+
+.console-cursor{
+    animation: flash 1.5s infinite steps(2, jump-none);
+}
+
+@keyframes flash{
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
