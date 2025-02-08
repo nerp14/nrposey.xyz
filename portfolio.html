@@ -4,17 +4,71 @@
         <title>Noah's Webpage</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
+        <style>
+            .flex-container1{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+            }
+            .flex-item{
+                flex: 1;
+            }
+            .flex-container2{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            img{
+                width: 128px;
+                height: 128px;
+                object-fit: cover;
+            }
+            .portfolio-image{
+                margin: 4px;
+            }
+            .portfolio-image:hover{
+                margin: 0px;
+                border: 4px #b3ff00 solid;
+            }
+        </style>
     </head>
 
     <main>
+
         <header>
             <div class="nav-container">
-                <a href="/index.html">Home</a>
-                <a href="/portfolio.html">Portfolio <span class="console-cursor">&lt;</span></a>
-                <a href="/contact.html">Contact</a>
+                <a href="/index.html">&gt; Home</a>
+                <a href="/portfolio.html">&gt; Portfolio<span class="console-cursor">|</span></a>
+                <a href="/contact.html">&gt; Contact</a>
             </div>
         </header>
+
         <body>
+            <div class="flex-container1"> <!--Main Container-->
+                <div class="flex-item"> <!--Left Column-->
+                    <h2>Portfolio</h2>
+                    <div class="flex-container2"> <!--Portfolio Container-->
+                        <a class="portfolio-image" href="/images/6propsrender.png" target="_blank"><img src="/images/6propsrender.png"></a>
+                        <a class="portfolio-image" href="/images/dioramarender.png" target="_blank"><img src="/images/dioramarender.png"></a>
+                        <a class="portfolio-image" href="/images/cartooncharacter.png" target="_blank"><img src="/images/cartooncharacter.png"></a>
+                        <a class="portfolio-image" href="/images/console.png" target="_blank"><img src="/images/console.png"></a>
+                        <a class="portfolio-image" href="/images/crystalplant.png" target="_blank"><img src="/images/crystalplant.png"></a>
+                        <a class="portfolio-image" href="/images/cubeplant.png" target="_blank"><img src="/images/cubeplant.png"></a>
+                        <a class="portfolio-image" href="/images/vehiclerender.png" target="_blank"><img src="/images/vehiclerender.png"></a>
+                        <a class="portfolio-image" href="/images/modularpropsrender.png" target="_blank"><img src="/images/modularpropsrender.png"></a>
+                        <a class="portfolio-image" href="/images/weaponrender.png" target="_blank"><img src="/images/weaponrender.png"></a>
+                        <a class="portfolio-image" href="/images/locker.png" target="_blank"><img src="/images/locker.png"></a>
+                        <a class="portfolio-image" href="/images/pedestal.png" target="_blank"><img src="/images/pedestal.png"></a>
+                        <a class="portfolio-image" href="https://nrposey14.itch.io/outset" target="_blank"><img src="/images/outset.png"></a>
+                    </div>
+                </div>
+                <div class="flex-item"> <!--Right Column-->
+                    <h2>Degrees</h2>
+                    Associates in Simulation and Game Development, specialty in programming
+                </div>
+            </div>
         </body>
+
     </main>
 </html>

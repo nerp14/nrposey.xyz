@@ -28,6 +28,11 @@ a{
     color: #b3ff00;
 }
 
+div{
+    margin: 0;
+    padding: 0;
+}
+
 .nav-container{
     display: flex;
     justify-content: left;
