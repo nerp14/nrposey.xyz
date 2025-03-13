@@ -2,6 +2,13 @@
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 
+//Gets the mouse position
+var mousePos = [0, 0];
+function coordinate(event) {
+    mousePos = [event.clientX, event.clientY - document.getElementsByTagName("header")[0].clientHeight];
+}
+window.addEventListener('mousemove', coordinate);
+
 //Sets the background color for the canvas
 ctx.fillStyle = 'rgb(12, 17, 0)';
 ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -41,8 +48,8 @@ function draw(){
         //Set Font
         ctx.font = "large Source Code Pro";
 
-        //Draw letters
         ctx.fillStyle = "#385000";
+
         ctx.fillText(letters[i].char, letters[i].xPos, letters[i].yPos);
 
         //Increment height or randomize letter and width
@@ -55,6 +62,10 @@ function draw(){
             letters[i].yPos += letters[i].speed;
         }
     }
+
+    //Draw radial gradient
+    ctx.createRadialGradient(mousePos[0], mousePos[1], 50, mousePos[0] + 50, mousePos[1] + 50, 50);
+    
 }
 
 //Call draw function every interval
